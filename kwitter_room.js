@@ -36,11 +36,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
 getData();
 
-function redirectToRoomName(name){
-      console.log(name);
-      localStorage.setItem("room_name", name);
 
-}
 
 function logout(){
       localStorage.removeItem("user_name");
